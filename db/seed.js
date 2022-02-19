@@ -70,8 +70,12 @@ async function createInitialUsers() {
   const albert = await createUser({
     username: "albert",
     password: "bertie99",
+  });
+  const sandra = await createUser({
     username: "sandra",
     password: "westside24",
+  });
+  const glamgal = await createUser({
     username: "glamgal",
     password: "glamglam",
   });
