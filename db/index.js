@@ -341,11 +341,10 @@ async function getAllTags() {
   try {
     const { rows } = await client.query(`
       SELECT * 
-      FROM tags
-      RETURNING *;
+      FROM tags;
     `);
 
-    return res.rows[0];
+    return rows[0];
   } catch (error) {
     throw error;
   }
